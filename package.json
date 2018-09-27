@@ -2,9 +2,10 @@
   "name": "nodejs-medexperts",
   "version": "1.0.0",
   "description": "This is a project contains webservices implemented using Node JS and MySQL",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/tanmay-patil/nodejs-medexperts/issues"
   },
-  "homepage": "https://github.com/tanmay-patil/nodejs-medexperts#readme"
+  "homepage": "https://github.com/tanmay-patil/nodejs-medexperts#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "jshint": "^2.9.6",
+    "mysql": "^2.16.0"
+  }
 }
