@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var model = require('../model/user_account/user_account');
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/user_account/user_account_controller');
 
 // middleware that is specific to this router
 router.use(function timeLog(req, res, next) {
@@ -13,8 +13,8 @@ router.get('/', function (req, res) {
 });
 
 router.get('/getAllUsers', function (req, res) {
-    let x = model.test(req, res);
-    res.send('Get all users ' + x);
+    let allUsersList = controller.getAllUsers();
+    res.send('Get all users ' + allUsersList);
 });
 
 module.exports = router;

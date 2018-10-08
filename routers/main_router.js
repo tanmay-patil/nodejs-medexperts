@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var useraccountRouter = require('./useraccount_router');
+const express = require('express');
+const router = express.Router();
+const useraccountRouter = require('./useraccount_router');
 
 // middleware that is specific to this router
 router.use(function timeLog(req, res, next) {

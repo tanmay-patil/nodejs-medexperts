@@ -1,7 +1,7 @@
-let db = require('./config/database/db_config');
+const db = require('./config/database/db_config');
 
-var app = require('express')();
-var mainRoutes = require('./routers/main_router');
+const app = require('express')();
+const mainRoutes = require('./routers/main_router');
 
 app.use('/medexperts', mainRoutes);
 
